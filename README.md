@@ -62,5 +62,15 @@ Make sure PostgreSQL is running and the database exists.
 node server.js
 ```
 
+---
 
-
+# 🧪 API Endpoints (Sample)
+-----------------------------------------------------------------
+Method       Endpoint               Description
+-----------------------------------------------------------------
+POST	      /api/auth/register	    Register new user
+-----------------------------------------------------------------
+POST	      /api/auth/login	        Login user
+-----------------------------------------------------------------
+GET	        /api/user/me	          Get user profile
+-----------------------------------------------------------------
