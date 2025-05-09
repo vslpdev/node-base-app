@@ -31,7 +31,7 @@
 ### 1. Clone the Repo
 
 ```
-git clone [https://github.com/vslpdev/node-base-app.git](https://github.com/vslpdev/node-base-app.git)
+git clone https://github.com/vslpdev/node-base-app.git
 cd node-base-app
 ```
 
