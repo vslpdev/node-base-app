@@ -65,7 +65,6 @@ node server.js
 ---
 
 # 🧪 API Endpoints (Sample)
-## 🧪 API Endpoints
 
 | Method | Endpoint             | Description             | Protected |
 |--------|----------------------|--------------------------|-----------|
