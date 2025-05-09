@@ -65,12 +65,11 @@ node server.js
 ---
 
 # 🧪 API Endpoints (Sample)
------------------------------------------------------------------
-Method       Endpoint               Description
------------------------------------------------------------------
-POST	      /api/auth/register	    Register new user
------------------------------------------------------------------
-POST	      /api/auth/login	        Login user
------------------------------------------------------------------
-GET	        /api/user/me	          Get user profile
------------------------------------------------------------------
+## 🧪 API Endpoints
+
+| Method | Endpoint             | Description             | Protected |
+|--------|----------------------|--------------------------|-----------|
+| POST   | `/api/auth/register` | Register a new user     | No        |
+| POST   | `/api/auth/login`    | Authenticate user       | No        |
+| GET    | `/api/user/me`       | Get current user profile| Yes       |
+| GET    | `/api/users`         | List all users (admin)  | Yes       |
