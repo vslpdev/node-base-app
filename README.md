@@ -31,8 +31,8 @@
 ### 1. Clone the Repo
 
 ```
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone [https://github.com/vslpdev/node-base-app.git](https://github.com/vslpdev/node-base-app.git)
+cd node-base-app
 ```
 
 ### 2. Install Dependencies
