@@ -7,8 +7,13 @@ exports.getUserById = async (id) => {
 };
 
 exports.updateUser = async (id, data) => {
+	if (!data || typeof data !== 'object' || Object.keys(data).length === 0) {
+		throw { status: 400, message: 'No data provided for update' };
+	}
+
 	const user = await User.findByPk(id);
 	if (!user) throw { status: 404, message: 'User not found' };
+
 	await user.update(data);
 	return { message: 'Profile updated' };
 };

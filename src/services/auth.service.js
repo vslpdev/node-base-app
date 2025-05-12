@@ -39,7 +39,9 @@ exports.authenticateUser = async (email, password) => {
 exports.resetPassword = async (token, newPassword) => {
 	// Verify the token (find it in DB, check expiry), then update user's password
 	const record = await Token.findOne({ where: { token, type: 'reset' }, include: User });
+
 	if (!record || record.expires < Date.now()) throw { status: 400, message: 'Invalid or expired reset token' };
+
 	const user = record.User;
 	const hashed = await bcrypt.hash(newPassword, 10);
 	await user.update({ password: hashed });
