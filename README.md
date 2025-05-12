@@ -66,9 +66,9 @@ node server.js
 
 # 🧪 API Endpoints (Sample)
 
-| Method | Endpoint             | Description             | Protected |
+| Method | Endpoint             | Description              | Protected |
 |--------|----------------------|--------------------------|-----------|
-| POST   | `/api/auth/register` | Register a new user     | No        |
-| POST   | `/api/auth/login`    | Authenticate user       | No        |
-| GET    | `/api/user/me`       | Get current user profile| Yes       |
-| GET    | `/api/users`         | List all users (admin)  | Yes       |
+| POST   | `/api/auth/register` | Register a new user      | No        |
+| POST   | `/api/auth/login`    | Authenticate user        | No        |
+| GET    | `/api/user/profile`  | Get current user profile | Yes       |
+| PUT    | `/api/user/profile`  | Update user profile      | Yes       |
