@@ -23,6 +23,7 @@
 - **dotenv** for environment config
 - **Joi** for validation
 - **winston** for centerlize logger
+- **nodemon** for auto restart the server
 
 ---
 
@@ -59,7 +60,7 @@ Make sure PostgreSQL is running and the database exists.
 
 ### 5. Start the Server
 ```
-node server.js
+npm run dev
 ```
 
 ---
